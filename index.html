@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="./css/maze.css">
+	<div style="text-align:center" id="maze_runner">
+	  <h1 class="title_"><font size="7">Maze Traversal</font></h1>
+	  <canvas id="runner1" width="400" height="450"></canvas>
+	  <canvas id="runner2" width="400" height="450"></canvas>
+	  <canvas id="runner3" width="400" height="450"></canvas>
+	  <p>
+		<button class="buttonBlue" id="restart">Restart</button> 
+		<button class="buttonBlue" id="reset">New maze</button>
+	  </p>
+	</div>
+	<p>From left to right: Breadth-First Search, Depth-First Search, A* Search</p>
+	<p>This demo was written in Javascript.</p>
+
+	<script>
+	  var elementExists = document.getElementsByClassName("read-more");
+	  
+	  var mazer_runner = document.getElementById("maze_runner");
+	  var maze_thumbnail = document.getElementById("maze_thumbnail");
+
+	  if (elementExists.length === 0) {
+		mazer_runner.style.display = "block";
+		maze_thumbnail.style.display = "none";
+	  } else {
+		mazer_runner.style.display = "none";
+		maze_thumbnail.style.display = "block";
+	  }
+	</script>
+
+	<script src="./js/buckets.min.js"></script>
+	<script src="./js/cell.js"></script>
+</html>
