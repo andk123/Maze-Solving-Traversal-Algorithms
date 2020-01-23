@@ -2,6 +2,8 @@
 
 Here is the experimental results of comparing different searching algorithm using the maze runner. In the following order, we have Breadth-First Search, Depth-First Search, and A* Search.
 
+<img src="https://i.gyazo.com/thumb/400/_8acddd2ae042291c5e9e51950f8afad5-gif.gif" alt="Maze that demonstrates traversal algorithms" title="Maze solver">
+
 The three algorithms used are Breadth-First Search, Depth-First Search and A* Search.
 
 ## Breadth-First Search
